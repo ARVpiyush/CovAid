@@ -12,8 +12,6 @@ const app= express();
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const FacebookStrategy= require("passport-facebook").Strategy;
 const findOrCreate = require('mongoose-findorcreate');
-const dotenv = require('dotenv').config()
-if (process.env.NODE_ENV !== 'production') { require('dotenv').config() }
 
 app.use(express.static("public"));
 app.set('view engine','ejs');
